@@ -33,6 +33,7 @@ function check(){
         correctAnswer++;
     }
     var feedback = ["GreatJob!!!", "Next Time Do Better!", "Hope to See You Soon!"];
+    // var images = ["./assets/images/great_job.gif", "./assets/images/better.gif", "./images/seeyou.gif"];
     var score;
     if (correctAnswer < 1) {
      score = 2
@@ -48,5 +49,6 @@ document.getElementById("submit").style.visibility = "visible";
 clearInterval(interval);
 document.getElementById("feedback").innerHTML = feedback[score];
 document.getElementById("correct-number").innerHTML = "You got " + correctAnswer + " correct answers";
+// document.getElementById("picture").src = images[score];
 }
 timerDom();

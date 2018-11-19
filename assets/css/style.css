@@ -2,6 +2,7 @@ body {
     width: 980px;
     font-family: 'Courgette', cursive;
     background-color: orangered;
+    /* background-image: url(img/assets/images/backgroung.png); */
 }
 .container {
     background-color: orange;
