@@ -1,16 +1,54 @@
 body {
-    background-image: url("/assets/images/trivia_background_pic.png");
+    width: 980px;
+    font-family: 'Courgette', cursive;
+    background-color: orangered;
 }
-h5 {
-    height: 200px;
+.container {
+    background-color: orange;
+}
+
+h1{
+    height: 50px;
+    font-family: 'Lobster Two', cursive;
+    background-color: #dc3545;
+}
+#trivia {
+    width: 700px;
+    background: orchid;
+    margin-right: 100px;
+}
+p {
+font-display: initial;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+color: #6610f2;
+}
+#button {
+    background: #dc3545;
+    border: 1px solid red;
+    padding: 10px;
+    transition-duration: initial;
     font-size: 20px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: blue;
+    margin-right: 30px;
+    margin-left: 30px;
+    
 }
-.card-body {
+#button:hover {
+    background: #6610f2;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#mqc {
+    color: #dc3545;
+}
+
+.time-container{
+font-size: 35px;
 
 }
-p{
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+footer {
+    clear: both;
+    width: 980px;
+    position: fixed;
 }
+ 

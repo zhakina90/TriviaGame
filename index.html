@@ -5,30 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TriviaGame</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Lobster+Two" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Courgette|Lobster+Two" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
 </head>
 <body>
-    <form>
-            <div class="card w-75 text-center">
-                    <div class="card-body">
-                      <h5 class="card-title">Totally Trivial Trivia</h5>
-                      <p id="trivia-questions"></p>
-                      <div id="timer"></div>
-                    <div id="outcome"></div>
-                    <button class="btn btn-primary" id="playbtn">Play</button>
-                      <a href="#" class="btn btn-primary" id="submit">Submit</a>
-                    </div>
-                    <div class="card-footer text-muted">
+   <div class="container w-75 text-center">
+    <h1>Totally Trivial Trivia</h1>
+    <div class="time-container" id ="time-counter">Time Remaining: </div>
+    <form id="trivia" name="trivia">
+        <p>Grant Gustin plays whsich superhero on the CW show of the same name?</p>
+        <input type="radio" id="mqc" name="question1" value =" The Arrow ">The Arrow
+        <input type="radio" id="mqc" name="question1" value =" Black Canary ">Black Canary
+        <input type="radio" id="mqc" name="question1" value ="The Flash ">The Flash   
+        <input type="radio" id="mqc" name="question1" value ="Daredvil">Daredvil<br>
+        <p>In the game Destiny, who succeeded Peter Dinklage in voicing the protagonist&#039;s &quot;Ghost&quot;?"</p>
+        <input type="radio" id="mqc" name="question2" value ="Nolan North">Nolan North
+        <input type="radio" id="mqc" name="question2" value =" Mark Hamill "> Mark Hamill
+        <input type="radio" id="mqc" name="question2" value ="Troy Baker">Troy Baker
+        <input type="radio" id="mqc" name="question2" value ="John DiMaggio ">John DiMaggio<br>
+        <p>What number does the Roman numeral &quot;D&quot; stand for?</p>
+        <input type="radio" id="mqc" name="question3" value ="1000 ">1000
+        <input type="radio" id="mqc" name="question3" value ="50 ">50
+        <input type="radio" id="mqc" name="question3" value ="500">500
+        <input type="radio" id="mqc" name="question3" value ="100 ">100<br>
+        <p>What does &quot;LCD&quot; stand for?"</p>
+        <input type="radio" id="mqc" name="question4" value ="Long Continuous Design ">Long Continuous Design
+        <input type="radio" id="mqc" name="question4" value ="Liquid Crystal Display ">Liquid Crystal Display
+        <input type="radio" id="mqc" name="question4" value ="Language Control Design" >Language Control Design
+        <input type="radio" id="mqc" name="question4" value ="Last Common Difference ">Last Common Difference<br>
+        <p>Which game is NOT part of the Science Adventure series by 5pb. and Nitroplus?</p>
+        <input type="radio" id="mqc" name="question5" value ="Robotics; Notes">Robotics; Notes
+        <input type="radio" id="mqc" name="question5" value ="Chaos; Child ">Chaos; Child
+        <input type="radio" id="mqc" name="question5" value ="Steins; Gate ">Steins; Gate
+        <input type="radio" id="mqc" name="question5" value ="Occultic; Nine">Occultic; Nine
+        <input type="button" id="button"  value ="Done!" onclick="check();">
+    </form>
+    <div id="submit"></div>
+    <p id="correct-number"></p>
+    <p id = "feedback"></p>
+    </div>
+                    <footer class="card-footer text-muted">
                      <i class="far fa-copyright">Copyright | Zhamal Nurdin kyzy</i>
-                    </div>
-                  </div>
+                    </footer>
+                   
+                
             
             
             
 
-    </form>
+    
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
